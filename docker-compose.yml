@@ -1,0 +1,12 @@
+version: "2.1"
+services:
+  app:
+    container_name: app
+    image: openjdk:17-jdk
+    mem_limit: 1G
+    volumes:
+      - ./build/libs/demo-1.jar:/app/service.jar
+    working_dir: /app
+    ports:
+      - "8080:8080"
+    command: java -jar /app/service.jar

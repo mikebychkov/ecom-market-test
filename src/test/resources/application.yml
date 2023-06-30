@@ -1,0 +1,4 @@
+
+request-count-limit:
+  count: 2
+  seconds: 5
