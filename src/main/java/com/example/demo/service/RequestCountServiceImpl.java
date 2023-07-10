@@ -22,7 +22,7 @@ public class RequestCountServiceImpl implements RequestCountService {
     private int requestCount = 2;
 
     @Value("${request-count-limit.seconds}")
-    private int seconds = 10;
+    private int seconds = 5;
 
     @Override
     public void registerRequest(String ip, String aValue) throws InterruptedException {
