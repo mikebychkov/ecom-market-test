@@ -1,5 +1,7 @@
 Reducing amount of http requests in a given time
 -
+(NO THROTTLING THIRD PARTY LIB USED - SPRING-BOOT ONLY)
+
 Service classes in this app allows to reduce http request amount in given time by client IP address simply adding annotation above controller/service method.
 
 ```
